@@ -87,7 +87,6 @@ if __name__ == '__main__':
     if args.cache:
         volume.append(args.cache)
         env['CUPY_CACHE_DIR'] = os.path.join(args.cache, '.cupy')
-        env['CCACHE_DIR'] = os.path.join(args.cache, '.ccache')
 
     if args.coveralls and args.test == 'py2':
         env['COVERALLS_REPO_TOKEN'] = args.coveralls
