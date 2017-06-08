@@ -108,7 +108,7 @@ if __name__ == '__main__':
         env['CUPY_CACHE_DIR'] = os.path.join(args.cache, '.cupy')
         env['CCACHE_DIR'] = os.path.join(args.cache, '.ccache')
 
-    if args.coveralls and args.test == 'py2':
+    if args.coveralls:
         env['COVERALLS_REPO_TOKEN'] = args.coveralls
         conf['requires'].append('coveralls')
 
